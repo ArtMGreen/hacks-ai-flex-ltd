@@ -6,9 +6,7 @@ import nltk
 import pke
 import torch
 
-nltk.download('brown')
-nltk.download('stopwords')
-nltk.download('popular')
+nltk.data.path.append("nltk_data")
 
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
